@@ -80,10 +80,6 @@ application:
       path: 'https://raw.githubusercontent.com/afwfv/DD-AD/refs/heads/release/DD-AD.txt'
       type: dns
 
-    - name: 'Local User Rules'
-      path: 'rule/local-user.txt'
-      type: dns
-
   output:
     file_header: |
       Custom AdBlock ${type}
@@ -121,4 +117,3 @@ application:
           - 'halflife-list-phone'
           - 'DD-AD 主规则'
           - 'DD-AD 私有规则'
-          - 'Local User Rules'
