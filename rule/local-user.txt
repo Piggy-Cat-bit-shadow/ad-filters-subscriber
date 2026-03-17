@@ -1,0 +1,14 @@
+@@||mtalk.google.com^
+@@||*.mtalk.google.com^
+@@||fcm.googleapis.com^
+@@||firebaseinstallations.googleapis.com^
+@@||github.com^
+@@||githubusercontent.com^
+@@||githubassets.com^
+@@||github.io^
+@@||www.google.com.hk^
+||log-api.pangolin-sdk-toutiao-b.com^$important
+||log-api.pangolin-sdk-toutiao.com^$important
+||is.snssdk.com^$important
+@@||miaowu.baidu.com^$important
+@@||wl.jd.com^$important
