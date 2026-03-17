@@ -12,3 +12,9 @@
 ||is.snssdk.com^$important
 @@||miaowu.baidu.com^$important
 @@||wl.jd.com^$important
+@@||tieba-ares.cdn.bcebos.com^$important
+@@||dlswbr.baidu.com^$important
+@@||gsp0.baidu.com^$important
+@@||sofire.baidu.com^$important
+@@||mlog.bigda.com^$important
+@@||h2tcbox.baidu.com^$important
