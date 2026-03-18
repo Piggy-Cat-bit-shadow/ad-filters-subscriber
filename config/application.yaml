@@ -56,8 +56,8 @@ application:
     - name: 'halflife-list-phone'
       path: 'https://cdn.jsdelivr.net/gh/sbwml/halflife-list@master/ad.txt'
 
-    - name: '1Hosts Lite'
-      path: 'https://badmojr.github.io/1Hosts/Lite/adblock.txt'
+    - name: '1Hosts'
+      path: 'https://adguardteam.github.io/HostlistsRegistry/assets/filter_70.txt'
 
     - name: 'anti-ad'
       path: 'https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-easylist.txt'
