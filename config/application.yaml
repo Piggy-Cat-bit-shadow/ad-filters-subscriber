@@ -19,9 +19,6 @@ application:
 
     - name: 'halflife-list-phone'
       path: 'https://cdn.jsdelivr.net/gh/sbwml/halflife-list@master/ad.txt'
-      
-    - name: 'GoodbyeAds'
-      path: 'https://raw.githubusercontent.com/jerryn70/GoodbyeAds/master/Formats/GoodbyeAds-AdBlock-Filter.txt'
 
     - name: '1Hosts-Lite'
       path: 'https://badmojr.github.io/1Hosts/Lite/adblock.txt'
@@ -58,5 +55,4 @@ application:
           - anti-ad
           - OISD  
           - StevenBlack
-          - GoodbyeAds
 
