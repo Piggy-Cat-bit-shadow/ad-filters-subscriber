@@ -47,8 +47,8 @@ application:
     - name: '乘风小众视频过滤规则'
       path: 'https://gcore.jsdelivr.net/gh/xinggsf/Adblock-Plus-Rule/minority-mv.txt'
 
-    - name: 'HaGeZi Light DNS Blocklist'
-      path: 'https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/adblock/light.txt'
+    - name: 'HaGeZi's Ultimate DNS Blocklist'
+      path: 'https://gitlab.com/hagezi/mirror/-/raw/main/dns-blocklists/adblock/ultimate.txt'
 
     - name: 'AdRules DNS List'
       path: 'https://gitlab.com/cats-team/adrules/-/raw/main/dns.txt'
@@ -63,10 +63,10 @@ application:
       path: 'https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-easylist.txt'
 
     - name: 'OISD'
-      path: 'https://small.oisd.nl'
+      path: 'https://big.oisd.nl'
 
     - name: 'StevenBlack'
-      path: 'https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts'
+      path: 'https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/fakenews-gambling-porn-social/hosts'
       type: hosts
 
   output:
@@ -96,7 +96,7 @@ application:
           - AdGuard中文过滤规则
           - 乘风视频过滤规则
           - 乘风小众视频过滤规则
-          - HaGeZi Light DNS Blocklist
+          - HaGeZi's Ultimate DNS Blocklist
           - AdRules DNS List
           - halflife-list-phone
           - 1Hosts Lite
