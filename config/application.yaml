@@ -47,7 +47,7 @@ application:
     - name: '乘风小众视频过滤规则'
       path: 'https://gcore.jsdelivr.net/gh/xinggsf/Adblock-Plus-Rule/minority-mv.txt'
 
-    - name: 'HaGeZi's Ultimate DNS Blocklist'
+    - name: "HaGeZi's Ultimate DNS Blocklist"
       path: 'https://gitlab.com/hagezi/mirror/-/raw/main/dns-blocklists/adblock/ultimate.txt'
 
     - name: 'AdRules DNS List'
