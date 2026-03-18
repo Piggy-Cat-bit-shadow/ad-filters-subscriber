@@ -1,24 +1,6 @@
 application:
 
   input:
-    - name: 'AWAvenue-Ads-Rule-Replenish'
-      path: 'https://raw.githubusercontent.com/TG-Twilight/AWAvenue-Ads-Rule/main/Filters/AWAvenue-Ads-Rule-Replenish.txt'
-
-    - name: '晴雅广告拦截规则'
-      path: 'https://raw.githubusercontent.com/790953214/qy-Ads-Rule/main/black.txt'
-
-    - name: 'QuarkList'
-      path: 'https://raw.githubusercontent.com/bamf2077/quarklist/master/dist/quarklist.txt'
-
-    - name: 'SMAdHosts'
-      path: 'https://raw.githubusercontent.com/2Gardon/SM-Ad-FuckU-hosts/master/SMAdHosts'
-      type: hosts
-
-    - name: '10007'
-      path: 'https://raw.githubusercontent.com/lingeringsound/10007/main/all'
-
-    - name: '酷安规则'
-      path: 'https://raw.githubusercontent.com/HAI010415/HAIADLJ/refs/heads/main/mydnsad-251128.txt'
 
     - name: 'AdGuard DNS filter'
       path: 'https://adguardteam.github.io/HostlistsRegistry/assets/filter_1.txt'
@@ -26,47 +8,32 @@ application:
     - name: 'AdGuard基础规则'
       path: 'https://filters.adtidy.org/android/filters/2_optimized.txt'
 
-    - name: 'AdGuard移动规则'
-      path: 'https://filters.adtidy.org/android/filters/11_optimized.txt'
-
-    - name: 'AWAvenue-Ads-Rule'
-      path: 'https://raw.githubusercontent.com/TG-Twilight/AWAvenue-Ads-Rule/main/AWAvenue-Ads-Rule.txt'
-
-    - name: 'jiekouAD'
-      path: 'https://raw.githubusercontent.com/damengzhu/banad/main/jiekouAD.txt'
-
-    - name: '乘风广告过滤规则'
-      path: 'https://raw.githubusercontent.com/xinggsf/Adblock-Plus-Rule/master/rule.txt'
-
     - name: 'AdGuard中文过滤规则'
       path: 'https://filters.adtidy.org/android/filters/224_optimized.txt'
 
-    - name: '乘风视频过滤规则'
-      path: 'https://raw.githubusercontent.com/xinggsf/Adblock-Plus-Rule/master/mv.txt'
-
-    - name: '乘风小众视频过滤规则'
-      path: 'https://gcore.jsdelivr.net/gh/xinggsf/Adblock-Plus-Rule/minority-mv.txt'
-
-    - name: "HaGeZi's Ultimate DNS Blocklist"
-      path: 'https://gitlab.com/hagezi/mirror/-/raw/main/dns-blocklists/adblock/ultimate.txt'
+    - name: 'HaGeZi Light DNS Blocklist'
+      path: 'https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/adblock/light.txt'
 
     - name: 'AdRules DNS List'
       path: 'https://gitlab.com/cats-team/adrules/-/raw/main/dns.txt'
 
     - name: 'halflife-list-phone'
       path: 'https://cdn.jsdelivr.net/gh/sbwml/halflife-list@master/ad.txt'
+      
+    - name: 'GoodbyeAds'
+      path: 'https://raw.githubusercontent.com/jerryn70/GoodbyeAds/master/Formats/GoodbyeAds-AdBlock-Filter.txt'
 
-    - name: '1Hosts'
-      path: 'https://adguardteam.github.io/HostlistsRegistry/assets/filter_70.txt'
+    - name: '1Hosts-Lite'
+      path: 'https://badmojr.github.io/1Hosts/Lite/adblock.txt'
 
     - name: 'anti-ad'
       path: 'https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-easylist.txt'
 
     - name: 'OISD'
-      path: 'https://big.oisd.nl'
+      path: 'https://small.oisd.nl'
 
     - name: 'StevenBlack'
-      path: 'https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/fakenews-gambling-porn-social/hosts'
+      path: 'https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts'
       type: hosts
 
   output:
@@ -81,25 +48,15 @@ application:
         type: dns
         desc: 'Merged DNS blocklist'
         rule:
-          - AWAvenue-Ads-Rule-Replenish
-          - 晴雅广告拦截规则
-          - QuarkList
-          - SMAdHosts
-          - 10007
-          - 酷安规则
           - AdGuard DNS filter
           - AdGuard基础规则
-          - AdGuard移动规则
-          - AWAvenue-Ads-Rule
-          - jiekouAD
-          - 乘风广告过滤规则
           - AdGuard中文过滤规则
-          - 乘风视频过滤规则
-          - 乘风小众视频过滤规则
-          - HaGeZi's Ultimate DNS Blocklist
+          - HaGeZi Light DNS Blocklist
           - AdRules DNS List
           - halflife-list-phone
-          - 1Hosts Lite
+          - 1Hosts-Lite
           - anti-ad
-          - OISD
+          - OISD  
           - StevenBlack
+          - GoodbyeAds
+
