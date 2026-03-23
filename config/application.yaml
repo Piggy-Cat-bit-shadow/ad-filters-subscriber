@@ -13,7 +13,10 @@ application:
 
     - name: 'HaGeZi Light DNS Blocklist'
       path: 'https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/adblock/light.txt'
-
+      
+    - name: 'GOODBYEADS'
+      path: 'https://raw.githubusercontent.com/8680/GOODBYEADS/master/data/rules/dns.txt'
+      
     - name: 'AdRules DNS List'
       path: 'https://gitlab.com/cats-team/adrules/-/raw/main/dns.txt'
 
@@ -55,3 +58,4 @@ application:
           - anti-ad
           - OISD  
           - StevenBlack
+          - GOODBYEADS
