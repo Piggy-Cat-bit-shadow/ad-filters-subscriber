@@ -47,7 +47,11 @@ application:
     - name: "uniartisan's Adblock List Plus"
       path: 'https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_plus.txt'
       type: easylist
-
+   
+    - name: "uniartisan's Adblock List"
+      path: 'https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock.txt'
+      type: easylist
+      
   output:
     file_header: |
       Custom AdBlock ${type}
@@ -72,3 +76,4 @@ application:
           - 'StevenBlack'
           - 'GOODBYEADS'
           - "uniartisan's Adblock List Plus"
+          - "uniartisan's Adblock List"
