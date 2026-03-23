@@ -23,7 +23,7 @@ input:
 
   - name: 'AdRules DNS List'
     path: 'https://gitlab.com/cats-team/adrules/-/raw/main/dns.txt'
-    type: dns   # 这一条我判断偏高概率，但没直接读到原文件，见下说明
+    type: dns
 
   - name: 'halflife-list-phone'
     path: 'https://cdn.jsdelivr.net/gh/sbwml/halflife-list@master/ad.txt'
