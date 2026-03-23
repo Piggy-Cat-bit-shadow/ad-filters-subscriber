@@ -1,41 +1,54 @@
 application:
 
-  input:
+input:
+  - name: 'AdGuard DNS filter'
+    path: 'https://adguardteam.github.io/HostlistsRegistry/assets/filter_1.txt'
+    type: dns
 
-    - name: 'AdGuard DNS filter'
-      path: 'https://adguardteam.github.io/HostlistsRegistry/assets/filter_1.txt'
+  - name: 'AdGuard基础规则'
+    path: 'https://filters.adtidy.org/android/filters/2_optimized.txt'
+    type: easylist
 
-    - name: 'AdGuard基础规则'
-      path: 'https://filters.adtidy.org/android/filters/2_optimized.txt'
+  - name: 'AdGuard中文过滤规则'
+    path: 'https://filters.adtidy.org/android/filters/224_optimized.txt'
+    type: easylist
 
-    - name: 'AdGuard中文过滤规则'
-      path: 'https://filters.adtidy.org/android/filters/224_optimized.txt'
+  - name: 'HaGeZi Light DNS Blocklist'
+    path: 'https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/adblock/light.txt'
+    type: easylist
 
-    - name: 'HaGeZi Light DNS Blocklist'
-      path: 'https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/adblock/light.txt'
-      
-    - name: 'GOODBYEADS'
-      path: 'https://raw.githubusercontent.com/8680/GOODBYEADS/master/data/rules/dns.txt'
-      
-    - name: 'AdRules DNS List'
-      path: 'https://gitlab.com/cats-team/adrules/-/raw/main/dns.txt'
+  - name: 'GOODBYEADS'
+    path: 'https://raw.githubusercontent.com/8680/GOODBYEADS/master/data/rules/dns.txt'
+    type: dns
 
-    - name: 'halflife-list-phone'
-      path: 'https://cdn.jsdelivr.net/gh/sbwml/halflife-list@master/ad.txt'
+  - name: 'AdRules DNS List'
+    path: 'https://gitlab.com/cats-team/adrules/-/raw/main/dns.txt'
+    type: dns   # 这一条我判断偏高概率，但没直接读到原文件，见下说明
 
-    - name: '1Hosts-Lite'
-      path: 'https://badmojr.github.io/1Hosts/Lite/adblock.txt'
+  - name: 'halflife-list-phone'
+    path: 'https://cdn.jsdelivr.net/gh/sbwml/halflife-list@master/ad.txt'
+    type: easylist
 
-    - name: 'anti-ad'
-      path: 'https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-easylist.txt'
+  - name: '1Hosts-Lite'
+    path: 'https://badmojr.github.io/1Hosts/Lite/adblock.txt'
+    type: easylist
 
-    - name: 'OISD'
-      path: 'https://small.oisd.nl'
+  - name: 'anti-ad'
+    path: 'https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-easylist.txt'
+    type: easylist
 
-    - name: 'StevenBlack'
-      path: 'https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts'
-      type: hosts
+  - name: 'OISD'
+    path: 'https://small.oisd.nl'
+    type: hosts
 
+  - name: 'StevenBlack'
+    path: 'https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts'
+    type: hosts
+
+  - name: "uniartisan's Adblock List Plus"
+    path: 'https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_plus.txt'
+    type: easylist
+        
   output:
     file_header: |
       Custom AdBlock ${type}
@@ -59,3 +72,4 @@ application:
           - OISD  
           - StevenBlack
           - GOODBYEADS
+          - uniartisan's Adblock List Plus
