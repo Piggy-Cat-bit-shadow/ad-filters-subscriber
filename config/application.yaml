@@ -49,7 +49,7 @@ input:
     path: 'https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_plus.txt'
     type: easylist
         
-  output:
+output:
     file_header: |
       Custom AdBlock ${type}
       Last Modified: ${date}
