@@ -52,6 +52,22 @@ application:
       path: 'https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock.txt'
       type: easylist
       
+    - name: '10007'
+      path: 'https://raw.githubusercontent.com/lingeringsound/10007/main/all'
+      type: hosts   
+
+    - name: '乘风广告过滤规则'
+      path: 'https://raw.githubusercontent.com/xinggsf/Adblock-Plus-Rule/master/rule.txt'
+      type: easylist   
+
+    - name: '乘风视频过滤规则'
+      path: 'https://raw.githubusercontent.com/xinggsf/Adblock-Plus-Rule/master/mv.txt'
+      type: easylist   
+
+    - name: '乘风小众视频过滤规则'
+      path: 'https://gcore.jsdelivr.net/gh/xinggsf/Adblock-Plus-Rule/minority-mv.txt'
+      type: easylist  
+      
   output:
     file_header: |
       Custom AdBlock ${type}
@@ -77,3 +93,7 @@ application:
           - 'GOODBYEADS'
           - "uniartisan's Adblock List Plus"
           - "uniartisan's Adblock List"
+          - '10007'
+          - '乘风广告过滤规则'
+          - '乘风视频过滤规则'
+          - '乘风小众视频过滤规则'
