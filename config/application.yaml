@@ -1,17 +1,5 @@
 application:
   input:
-    - name: 'AdGuard DNS filter'
-      path: 'https://adguardteam.github.io/HostlistsRegistry/assets/filter_1.txt'
-      type: dns
-
-    - name: 'AdGuard基础规则'
-      path: 'https://filters.adtidy.org/android/filters/2_optimized.txt'
-      type: easylist
-
-    - name: 'AdGuard中文过滤规则'
-      path: 'https://filters.adtidy.org/android/filters/224_optimized.txt'
-      type: easylist
-
     - name: 'HaGeZi Light DNS Blocklist'
       path: 'https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/adblock/light.txt'
       type: easylist
@@ -52,9 +40,6 @@ application:
         type: dns
         desc: 'Merged DNS blocklist'
         rule:
-          - 'AdGuard DNS filter'
-          - 'AdGuard基础规则'
-          - 'AdGuard中文过滤规则'
           - 'HaGeZi Light DNS Blocklist'
           - 'AdRules DNS List'
           - 'halflife-list-phone'
