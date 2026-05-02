@@ -1,9 +1,5 @@
 application:
   input:
-    - name: 'HaGeZi Light DNS Blocklist'
-      path: 'https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/adblock/light.txt'
-      type: easylist
-
     - name: 'AdRules DNS List'
       path: 'https://gitlab.com/cats-team/adrules/-/raw/main/dns.txt'
       type: dns
@@ -23,10 +19,6 @@ application:
     - name: "uniartisan's Adblock List Plus"
       path: 'https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_plus.txt'
       type: easylist
-   
-    - name: "uniartisan's Adblock List"
-      path: 'https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock.txt'
-      type: easylist
 
   output:
     file_header: |
@@ -40,10 +32,8 @@ application:
         type: dns
         desc: 'Merged DNS blocklist'
         rule:
-          - 'HaGeZi Light DNS Blocklist'
           - 'AdRules DNS List'
           - 'halflife-list-phone'
           - '1Hosts-Lite'
           - 'OISD'
           - "uniartisan's Adblock List Plus"
-          - "uniartisan's Adblock List"
