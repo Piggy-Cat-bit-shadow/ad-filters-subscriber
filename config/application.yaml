@@ -1,7 +1,7 @@
 application:
   input:
     - name: 'AdRules DNS List'
-      path: 'https://gitlab.com/cats-team/adrules/-/raw/main/dns.txt'
+      path: 'https://raw.githubusercontent.com/Cats-Team/AdRules/main/dns.txt'
       type: dns
 
     - name: 'halflife-list-phone'
@@ -19,7 +19,10 @@ application:
     - name: "uniartisan's Adblock List Plus"
       path: 'https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_plus.txt'
       type: easylist
-
+      
+    - name: "anti-ad"
+      path: 'https://anti-ad.net/easylist.txt'
+      type: easylist
   output:
     file_header: |
       Custom AdBlock ${type}
@@ -37,3 +40,4 @@ application:
           - '1Hosts-Lite'
           - 'OISD'
           - "uniartisan's Adblock List Plus"
+          - "anti-ad"
