@@ -36,6 +36,10 @@ application:
       path: 'https://adguardteam.github.io/HostlistsRegistry/assets/filter_1.txt'
       type: easylist
 
+    - name: "HaGeZi Light DNS Blocklist"
+      path: 'https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/adblock/light.txt'
+      type: easylist
+
   output:
     file_header: |
       Custom AdBlock ${type}
@@ -60,3 +64,4 @@ application:
           - 'AdGuard Base Filter Optimized'
           - 'AdGuard Chinese Filter Optimized'
           - 'AdGuard DNS Filter'
+          - "HaGeZi Light DNS Blocklist"
